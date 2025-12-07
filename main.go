@@ -1,5 +1,7 @@
 package main
 
+// streak
+
 import (
 	"fmt"
 	"io"
@@ -31,7 +33,6 @@ func main() {
 		fmt.Println("=======Connection terminated=======")
 
 	}
-
 }
 
 func getLinesChannel(f io.ReadCloser) <-chan string {
@@ -66,7 +67,6 @@ func getLinesChannel(f io.ReadCloser) <-chan string {
 		if currentLine != "" {
 			ch <- currentLine
 		}
-
 	}()
 	return ch
 }
