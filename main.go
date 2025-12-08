@@ -1,7 +1,5 @@
 package main
 
-// streak
-
 import (
 	"fmt"
 	"io"
